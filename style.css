@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Titan+One&display=swap');
+
 :root {
   --cl-rosa: #ea008a;
   --cl-rosa-light: #ff6cc2;
@@ -6,16 +8,18 @@
   --cl-texto: #fff;
   --cl-sombra: hsla(0, 0%, 0%, 0.45);
 
-  --ff-primary: Tahoma;
-  --ff-secondary: Garamond;
+  --ff-primary: 'Titan One', Tahoma, sans-serif;
+  --ff-secondary: 'Patrick Hand', Garamond, serif;
+  --ff-default: Arial, Helvetica, sans-serif;
 }
 
 body {
   padding: 0;
   margin: 0;
   background-color: #f0f0f0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--ff-default);
   height: 100vh;
+  user-select: none;
 }
 
 /* HEADER */
@@ -29,7 +33,8 @@ header {
   padding: 0 2rem;
 }
 
-.logo, #main_logo {
+.logo, .logo > a, #main_logo {
+  display: block;
   height: 100%;
   z-index: 4;
 }
@@ -73,7 +78,7 @@ header {
   height: 35px;
   text-align: center;
   font-size: 24px;
-  color: #fff;
+  color: var(--cl-texto);
   cursor: pointer;
   padding: 5px;
   z-index: 4;
@@ -138,7 +143,7 @@ header {
 .contenido-info {
   font-size: 30px;
   font-family: var(--ff-secondary);
-  margin: 2rem 20%;
+  margin: 1.2rem 20%;
 }
 
 /* SECCION 1 */
