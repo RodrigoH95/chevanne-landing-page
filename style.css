@@ -19,13 +19,15 @@ body {
   margin: 0;
   font-family: var(--ff-default);
   background-color: var(--cl-rosa);
-  height: 100vh;
   user-select: none;
 }
 
 /* HEADER */
 
-header {
+.encabezado {
+  position: sticky;
+  z-index: 6;
+  top: 0;
   height: 70px;
   background-color: var(--cl-rosa);
   display: flex;
@@ -121,7 +123,7 @@ header {
   background-blend-mode: darken;
   color: var(--cl-texto);
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +152,6 @@ header {
 /* SECCION 1 */
 
 #seccion-1 {
-  height: calc((100vh - 70px));
   background-image: url("./img/sabores.png");
 }
 
@@ -265,9 +266,13 @@ footer > p {
 @media screen and (width <= 750px)
 {
 
-  header {
+  .encabezado {
     height: 50px;
     flex-direction: row-reverse;
+  }
+
+  .seccion {
+    min-height: calc(100vh - 50px);
   }
 
   .menu {
