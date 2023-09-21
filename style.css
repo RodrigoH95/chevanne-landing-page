@@ -88,6 +88,26 @@ header {
   content: attr(data-close);
 }
 
+.btn {
+  padding: 0.8rem 1rem;
+  background-color: var(--cl-celeste);
+  border: none;
+  border-radius: 5px;
+  color: var(--cl-texto);
+  font-weight: 900;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.btn-tienda {
+  text-decoration: none;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  filter: brightness(120%);
+}
+
 /* MAIN */
 
 .seccion {
@@ -132,7 +152,8 @@ header {
 
 #seccion-2 {
   background: var(--cl-celeste);
-  background: radial-gradient(circle, var(--cl-celeste-light) 0%, var(--cl-celeste) 100%); }
+  background: radial-gradient(circle, var(--cl-celeste-light) 0%, var(--cl-celeste) 100%);
+}
 
 .contenedor-productos {
   margin: 1rem 0;
