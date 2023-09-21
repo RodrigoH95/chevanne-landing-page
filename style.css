@@ -212,6 +212,15 @@ header {
   background: radial-gradient(circle, var(--cl-rosa-light) 0%, var(--cl-rosa) 100%);
 }
 
+#seccion-3 .contenido-info {
+  margin: 0 5%;
+}
+
+.mascota {
+   float: right;
+   max-width: 40%;
+}
+
 /* SECCION 4 */
 #seccion-4 {
   background-image: url("./img/fabrica.jpg");
@@ -297,6 +306,11 @@ footer > p {
 
   .producto-card {
     height: 200px;
+  }
+
+  #seccion-3 .contenido-info {
+    margin: 0;
+    padding: 0 0.5rem;
   }
 
   footer {
